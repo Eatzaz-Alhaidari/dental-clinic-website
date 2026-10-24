@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('branches', function (Blueprint $table) {
+            $table->id();
+            $table->json('name'); // translatable: ar, en
+            $table->json('address'); // translatable: ar, en
+            $table->string('whatsapp_number', 30);
+            $table->string('phone', 30);
+            $table->json('working_hours'); // translatable: ar, en
+            $table->text('map_url')->nullable();
+            $table->boolean('is_active')->default(true)->index();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('branches');
+    }
+};

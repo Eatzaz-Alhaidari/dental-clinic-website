@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-gold: #D4AF37;
+    --color-gold-light: #F0DDA8;
+    --color-cream: #FFF9EC;
+    --color-brown: #3B2A1E;
+    --color-orange: #F39200;
+
+    --font-tajawal: 'Tajawal', 'Cairo', sans-serif;
+    --font-cairo: 'Cairo', 'Tajawal', sans-serif;
+    --font-sans: 'Tajawal', 'Cairo', system-ui, sans-serif;
+}
+
+:root {
+    --clinic-gold: #D4AF37;
+    --clinic-gold-light: #F0DDA8;
+    --clinic-cream: #FFF9EC;
+    --clinic-brown: #3B2A1E;
+    --clinic-orange: #F39200;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Tajawal', 'Cairo', system-ui, sans-serif;
+}
+
+body {
+    background-color: #FFF9EC;
+    color: #3B2A1E;
+    min-height: 100vh;
+}
+
+/* Primary Golden Gradient Button */
+.btn-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #B89326 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, #E2BC44 0%, #C8A232 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.45);
+}
+
+/* WhatsApp & Booking Dark Brown Button with White Text */
+.btn-brown, .btn-booking {
+    background-color: #3B2A1E;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 14px rgba(59, 42, 30, 0.25);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-brown:hover, .btn-booking:hover {
+    background-color: #261A13;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(59, 42, 30, 0.35);
+}
+
+/* WhatsApp Brand Button */
+.btn-whatsapp {
+    background-color: #3B2A1E;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 14px rgba(59, 42, 30, 0.25);
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-whatsapp:hover {
+    background-color: #261A13;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 42, 30, 0.35);
+}
+
+/* White Card with Subtle Shadow */
+.card-clinic {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px -2px rgba(59, 42, 30, 0.06), 0 2px 6px -1px rgba(59, 42, 30, 0.04);
+    border: 1px solid rgba(240, 221, 168, 0.4);
+    transition: all 0.3s ease;
+}
+
+.card-clinic:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -4px rgba(212, 175, 55, 0.15), 0 4px 12px -2px rgba(59, 42, 30, 0.08);
+    border-color: #D4AF37;
+}
