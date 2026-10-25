@@ -23,7 +23,7 @@
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-amber-200/80 shadow-xs mb-6">
                         <span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37] animate-ping"></span>
                         <span class="text-xs font-bold text-[#3B2A1E]">
-                            {{ app()->getLocale() === 'en' ? 'Leading Oral & Dental Surgery Clinics in Sana\'a & Ibb' : 'العيادة التخصصية الرائدة لجراحات الفم والأسنان في صنعاء وإب' }}
+                            {{ app()->getLocale() === 'en' ? 'Leading Oral & Dental Surgery Clinics in Riyadh, Jeddah & Taif' : 'العيادة التخصصية الرائدة لجراحات الفم والأسنان في الرياض، جدة، والطائف' }}
                         </span>
                     </div>
 
@@ -37,7 +37,7 @@
 
                     <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 font-medium">
                         @if(app()->getLocale() === 'en')
-                            Equipped with surgical microscopes, digital 3D smile design, and painless pediatric dentistry across our Sana'a and Ibb clinics.
+                            Equipped with surgical microscopes, digital 3D smile design, and painless pediatric dentistry across our Riyadh, Jeddah, and Taif clinics.
                         @else
                             نقدم أحدث علاجات تقويم الأسنان الشفاف، وطب أسنان الأطفال بأجواء مريحة وخالية من الألم، وزراعة الأسنان الفورية وتجميل الابتسامة بإشراف نخبة من الاستشاريين المعتمدين.
                         @endif
@@ -67,8 +67,8 @@
                             <span class="text-xs text-stone-500 font-bold">{{ app()->getLocale() === 'en' ? 'Certified Doctors' : 'استشاريون معتمدون' }}</span>
                         </div>
                         <div>
-                            <span class="block text-2xl sm:text-3xl font-black text-[#D4AF37]">2</span>
-                            <span class="text-xs text-stone-500 font-bold">{{ app()->getLocale() === 'en' ? 'Full Branches (Sana\'a & Ibb)' : 'فرعان (صنعاء وإب)' }}</span>
+                            <span class="block text-2xl sm:text-3xl font-black text-[#D4AF37]">3</span>
+                            <span class="text-xs text-stone-500 font-bold">{{ app()->getLocale() === 'en' ? 'Branches (Riyadh, Jeddah & Taif)' : '3 فروع (الرياض - جدة - الطائف)' }}</span>
                         </div>
                         <div>
                             <span class="block text-2xl sm:text-3xl font-black text-[#3B2A1E]">15+</span>
@@ -173,22 +173,22 @@
         </div>
     </section>
 
-    <!-- Branches Section (Sana'a & Ibb From Database) -->
+    <!-- Branches Section (Riyadh, Jeddah & Taif From Database) -->
     <section class="py-16 md:py-24 bg-[#FFF9EC]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-14">
                 <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wider block mb-2">
-                    {{ app()->getLocale() === 'en' ? 'Our Clinic Locations' : 'مواقعنا الرسمية' }}
+                    {{ app()->getLocale() === 'en' ? 'Our Clinic Locations' : 'مواقعنا وعياداتنا' }}
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-[#3B2A1E] mb-4">
-                    {{ app()->getLocale() === 'en' ? 'Visit Us in Sana\'a & Ibb' : 'فروعنا في صنعاء وإب' }}
+                    {{ app()->getLocale() === 'en' ? 'Visit Us in Riyadh, Jeddah & Taif' : 'فروعنا في الرياض، جدة، والطائف' }}
                 </h2>
                 <p class="text-stone-600 text-sm md:text-base">
-                    {{ app()->getLocale() === 'en' ? 'Both branches are fully equipped with state-of-the-art diagnostic instruments and welcoming environments.' : 'عيادات مجهزة بأحدث أجهزة التصوير ثلاثي الأبعاد والتعقيم الجراحي، مع كادر استقبال واستشاري متفرغ لخدمتكم.' }}
+                    {{ app()->getLocale() === 'en' ? 'All three branches are fully equipped with state-of-the-art diagnostic instruments and welcoming environments.' : 'عيادات مجهزة بأحدث أجهزة التصوير ثلاثي الأبعاد والتعقيم الجراحي، مع كادر استقبال واستشاري متفرغ لخدمتكم.' }}
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 @foreach($branches as $branch)
                     <x-branch-card :branch="$branch" />
                 @endforeach
@@ -287,7 +287,7 @@
                         {{ app()->getLocale() === 'en' ? 'Ready to Transform Your Smile?' : 'هل أنت مستعد لبدء رحلة ابتسامتك المثالية؟' }}
                     </h3>
                     <p class="text-stone-300 text-sm sm:text-base mb-8">
-                        {{ app()->getLocale() === 'en' ? 'Book your consultation online in under a minute and confirm directly via branch WhatsApp.' : 'اختر الفرع الأقرب إليك (صنعاء أو إب) والخدمة المناسبة وسيصل طلبك فوراً لفريق الاستقبال.' }}
+                        {{ app()->getLocale() === 'en' ? 'Book your consultation online in under a minute and confirm directly via branch WhatsApp.' : 'اختر الفرع الأقرب إليك (الرياض، جدة، أو الطائف) والخدمة المناسبة وسيصل طلبك فوراً لفريق الاستقبال.' }}
                     </p>
                     <x-button variant="gold" :href="route('booking.index')" class="!py-4 !px-10 text-base">
                         {{ __('messages.nav.book_appointment') }}

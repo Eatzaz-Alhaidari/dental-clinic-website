@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <span class="text-xs font-bold text-[#3B2A1E] block">
-                            {{ app()->getLocale() === 'en' ? 'Direct Reception Confirmation in Sana\'a & Ibb' : 'تأكيد مباشر من موظف استقبال فرعك المفضل' }}
+                            {{ app()->getLocale() === 'en' ? 'Direct Reception Confirmation in Riyadh, Jeddah & Taif' : 'تأكيد مباشر من موظف استقبال فرعك المفضل' }}
                         </span>
                         <span class="text-[11px] text-stone-500 font-medium">
                             {{ app()->getLocale() === 'en' ? 'Your booking will be routed directly to the selected branch team.' : 'سيصل طلبك فوراً إلى مكتب الاستقبال في الفرع المختار ويتم تجهيز العيادة لك.' }}

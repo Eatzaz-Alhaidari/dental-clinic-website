@@ -27,7 +27,7 @@ Route::get('/services/{service}', [ServiceController::class, 'show'])->name('ser
 Route::get('/doctors', [DoctorController::class, 'index'])->name('doctors.index');
 Route::get('/doctors/{doctor}', [DoctorController::class, 'show'])->name('doctors.show');
 
-// Branches (Sana'a and Ibb details & maps)
+// Branches (Riyadh, Jeddah, and Taif details & maps)
 Route::get('/branches', [BranchController::class, 'index'])->name('branches.index');
 
 // Contact Us

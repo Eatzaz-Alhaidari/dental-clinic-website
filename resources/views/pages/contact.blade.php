@@ -13,7 +13,7 @@
                 {{ __('messages.nav.contact') }}
             </h1>
             <p class="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base">
-                {{ app()->getLocale() === 'en' ? 'We are here to answer your inquiries and assist you with appointments across our Sana\'a and Ibb branches.' : 'فريق الاستقبال في فرعي صنعاء وإب متاح للإجابة على جميع استفساراتكم وحجز مواعيدكم بسهولة عبر الهاتف أو الواتساب.' }}
+                {{ app()->getLocale() === 'en' ? 'We are here to answer your inquiries and assist you with appointments across our Riyadh, Jeddah, and Taif branches.' : 'فريق الاستقبال في فروعنا بالرياض، جدة، والطائف متاح للإجابة على جميع استفساراتكم وحجز مواعيدكم بسهولة عبر الهاتف الموحد أو الواتساب.' }}
             </p>
         </div>
     </section>
@@ -21,7 +21,7 @@
     <!-- Contact Info Cards -->
     <section class="py-16 md:py-24 bg-[#FFF9EC]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 
                 @foreach($branches as $branch)
                     @php

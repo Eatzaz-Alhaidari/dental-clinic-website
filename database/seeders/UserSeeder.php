@@ -25,28 +25,40 @@ class UserSeeder extends Seeder
         );
         $admin->syncRoles(['super_admin']);
 
-        // 2. Receptionist for Branch 1 (Sana'a)
-        $receptionSanaa = User::updateOrCreate(
-            ['email' => 'reception.sanaa@dentalclinic.com'],
+        // 2. Receptionist for Branch 1 (Riyadh)
+        $receptionRiyadh = User::updateOrCreate(
+            ['email' => 'reception.riyadh@dentalclinic.com'],
             [
-                'name' => 'استقبال فرع صنعاء',
+                'name' => 'استقبال فرع الرياض',
                 'password' => Hash::make('password'),
                 'branch_id' => 1,
                 'email_verified_at' => now(),
             ]
         );
-        $receptionSanaa->syncRoles(['receptionist']);
+        $receptionRiyadh->syncRoles(['receptionist']);
 
-        // 3. Receptionist for Branch 2 (Ibb)
-        $receptionIbb = User::updateOrCreate(
-            ['email' => 'reception.ibb@dentalclinic.com'],
+        // 3. Receptionist for Branch 2 (Jeddah)
+        $receptionJeddah = User::updateOrCreate(
+            ['email' => 'reception.jeddah@dentalclinic.com'],
             [
-                'name' => 'استقبال فرع إب',
+                'name' => 'استقبال فرع جدة',
                 'password' => Hash::make('password'),
                 'branch_id' => 2,
                 'email_verified_at' => now(),
             ]
         );
-        $receptionIbb->syncRoles(['receptionist']);
+        $receptionJeddah->syncRoles(['receptionist']);
+
+        // 4. Receptionist for Branch 3 (Taif)
+        $receptionTaif = User::updateOrCreate(
+            ['email' => 'reception.taif@dentalclinic.com'],
+            [
+                'name' => 'استقبال فرع الطائف',
+                'password' => Hash::make('password'),
+                'branch_id' => 3,
+                'email_verified_at' => now(),
+            ]
+        );
+        $receptionTaif->syncRoles(['receptionist']);
     }
 }

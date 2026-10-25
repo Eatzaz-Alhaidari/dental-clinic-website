@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" id="meta-viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', __('messages.clinic_name')) | {{ __('messages.clinic_name') }}</title>
-    <meta name="description" content="@yield('meta_description', 'عيادة دار العلوم لجراحات الفم والأسنان في صنعاء وإب - نخبة الاستشاريين في جراحة الفم والأسنان، زراعة الأسنان، تقويم الأسنان، وطب أسنان الأطفال.')">
+    <meta name="description" content="@yield('meta_description', 'عيادة دار العلوم لجراحات الفم والأسنان في الرياض، جدة، والطائف - نخبة الاستشاريين في جراحة الفم والأسنان، زراعة الأسنان، تقويم الأسنان، وطب أسنان الأطفال.')">
     <meta name="robots" content="index, follow">
     
     <!-- Favicon -->
@@ -13,7 +13,7 @@
 
     <!-- OpenGraph / Social -->
     <meta property="og:title" content="@yield('title', __('messages.clinic_name'))">
-    <meta property="og:description" content="@yield('meta_description', 'عيادة دار العلوم لجراحات الفم والأسنان - أحدث التقنيات الطبية في فرعي صنعاء وإب.')">
+    <meta property="og:description" content="@yield('meta_description', 'عيادة دار العلوم لجراحات الفم والأسنان - أحدث التقنيات الطبية في فروعنا بالرياض، جدة، والطائف.')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('images/dar-al-uloom-signboard.jpg') }}">
@@ -95,14 +95,14 @@
                     <div class="flex items-center gap-4">
                         <span class="flex items-center gap-1.5 font-medium">
                             <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                            <span>{{ app()->getLocale() === 'en' ? 'Open Today in Sana\'a & Ibb' : 'نستقبلكم يومياً في فرعي صنعاء وإب' }}</span>
+                            <span>{{ app()->getLocale() === 'en' ? 'Open Today in Riyadh, Jeddah & Taif' : 'نستقبلكم يومياً في فروعنا (الرياض - جدة - الطائف)' }}</span>
                         </span>
                         <span class="hidden md:inline text-amber-500/40">•</span>
                         <span class="hidden md:flex items-center gap-1">
                             <svg class="w-3.5 h-3.5 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
-                            <span dir="ltr">+967 1 445566</span>
+                            <span dir="ltr">920066788</span>
                         </span>
                     </div>
 
@@ -283,7 +283,7 @@
             </a>
 
             <!-- Floating WhatsApp Button -->
-            <a href="https://wa.me/967771234567?text={{ rawurlencode('مرحباً بكم، أود الاستفسار عن حجز موعد في عيادة دار العلوم لجراحات الفم والأسنان.') }}" target="_blank" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 relative group" title="{{ __('messages.whatsapp') }}">
+            <a href="https://wa.me/966920066788?text={{ rawurlencode('مرحباً بكم، أود الاستفسار عن حجز موعد في عيادة دار العلوم لجراحات الفم والأسنان.') }}" target="_blank" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 relative group" title="{{ __('messages.whatsapp') }}">
                 <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-25"></span>
                 <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24">
                     <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
@@ -294,16 +294,24 @@
         <!-- Footer -->
         <footer class="bg-[#3B2A1E] text-stone-300 pt-16 pb-8 border-t-4 border-[#D4AF37]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
                     
                     <!-- Col 1: Brand & Bio -->
-                    <div>
+                    <div class="lg:col-span-2">
                         <div class="mb-4">
                             <x-clinic-logo size="md" :inverted="true" />
                         </div>
-                        <p class="text-sm text-stone-300 leading-relaxed mb-6">
+                        <p class="text-sm text-stone-300 leading-relaxed mb-4">
                             {{ __('messages.footer.about_text') }}
                         </p>
+                        <div class="flex flex-wrap items-center gap-3 text-xs text-amber-200/90 font-bold mb-4">
+                            <span class="inline-flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
+                                📞 {{ __('messages.phone') }}: <span dir="ltr">920066788</span>
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-[#25D366]/20 text-[#25D366] px-3 py-1.5 rounded-lg border border-[#25D366]/30">
+                                💬 {{ __('messages.whatsapp') }}: <span dir="ltr">920066788</span>
+                            </span>
+                        </div>
                         <div class="flex items-center gap-3 text-sm">
                             <a href="{{ route('filament.admin.auth.login') }}" class="inline-flex items-center gap-1.5 text-xs text-[#F0DDA8] hover:text-white bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 transition-colors">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -314,57 +322,62 @@
                         </div>
                     </div>
 
-                    <!-- Col 2: Quick Links -->
+                    <!-- Col 2: Riyadh Branch -->
                     <div>
                         <h4 class="text-base font-bold text-white mb-4 border-b border-[#D4AF37]/30 pb-2">
-                            {{ __('messages.footer.quick_links') }}
-                        </h4>
-                        <ul class="space-y-2.5 text-sm font-medium">
-                            <li><a href="{{ route('home') }}" class="hover:text-[#D4AF37] transition-colors">{{ __('messages.nav.home') }}</a></li>
-                            <li><a href="{{ route('about') }}" class="hover:text-[#D4AF37] transition-colors">{{ __('messages.nav.about') }}</a></li>
-                            <li><a href="{{ route('services.index') }}" class="hover:text-[#D4AF37] transition-colors">{{ __('messages.nav.services') }}</a></li>
-                            <li><a href="{{ route('doctors.index') }}" class="hover:text-[#D4AF37] transition-colors">{{ __('messages.nav.doctors') }}</a></li>
-                            <li><a href="{{ route('branches.index') }}" class="hover:text-[#D4AF37] transition-colors">{{ __('messages.nav.branches') }}</a></li>
-                            <li><a href="{{ route('booking.index') }}" class="hover:text-[#D4AF37] transition-colors text-[#F0DDA8]">{{ __('messages.nav.book_appointment') }}</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Col 3: Sana'a Branch -->
-                    <div>
-                        <h4 class="text-base font-bold text-white mb-4 border-b border-[#D4AF37]/30 pb-2">
-                            {{ app()->getLocale() === 'en' ? 'Sana\'a Branch' : 'فرع صنعاء' }}
+                            {{ app()->getLocale() === 'en' ? 'Riyadh Branch' : 'فرع الرياض' }}
                         </h4>
                         <p class="text-xs text-stone-300 leading-relaxed mb-3">
-                            {{ app()->getLocale() === 'en' ? 'South Sixty St, Hadda Intersection, Near Al-Rowaishan Tower' : 'شارع الستين الجنوبي، تقاطع حدة، جوار برج الرويشان' }}
+                            {{ app()->getLocale() === 'en' ? 'King Fahd Road, Al Olaya District, Dar Al Uloom Tower' : 'طريق الملك فهد، حي العليا، برج دار العلوم الطبي' }}
                         </p>
                         <p class="text-xs text-amber-200/80 mb-2">
-                            <span class="font-bold text-white">{{ __('messages.phone') }}:</span> <span dir="ltr">+967 1 445566</span>
+                            <span class="font-bold text-white">{{ __('messages.phone') }}:</span> <span dir="ltr">920066788</span>
                         </p>
                         <p class="text-xs text-amber-200/80 mb-4">
-                            <span class="font-bold text-white">{{ __('messages.whatsapp') }}:</span> <span dir="ltr">967771234567</span>
+                            <span class="font-bold text-white">{{ __('messages.whatsapp') }}:</span> <span dir="ltr">920066788</span>
                         </p>
-                        <a href="https://wa.me/967771234567" target="_blank" class="text-xs text-[#25D366] hover:underline font-bold inline-flex items-center gap-1">
-                            <span>{{ app()->getLocale() === 'en' ? 'Chat with Sana\'a Branch' : 'واتساب فرع صنعاء' }}</span>
+                        <a href="https://wa.me/966920066788" target="_blank" class="text-xs text-[#25D366] hover:underline font-bold inline-flex items-center gap-1">
+                            <span>{{ app()->getLocale() === 'en' ? 'Chat with Riyadh' : 'واتساب فرع الرياض' }}</span>
                             <span>&rarr;</span>
                         </a>
                     </div>
 
-                    <!-- Col 4: Ibb Branch -->
+                    <!-- Col 3: Jeddah Branch -->
                     <div>
                         <h4 class="text-base font-bold text-white mb-4 border-b border-[#D4AF37]/30 pb-2">
-                            {{ app()->getLocale() === 'en' ? 'Ibb Branch' : 'فرع إب' }}
+                            {{ app()->getLocale() === 'en' ? 'Jeddah Branch' : 'فرع جدة' }}
                         </h4>
                         <p class="text-xs text-stone-300 leading-relaxed mb-3">
-                            {{ app()->getLocale() === 'en' ? 'Al-Udayn Street, Elite Medical Complex, Near Al-Ma\'ayen' : 'شارع العدين، مجمع النخبة الطبي، بالقرب من جولة المعاين' }}
+                            {{ app()->getLocale() === 'en' ? 'King Abdulaziz Road, Al Shati District, Medical Center' : 'طريق الملك عبدالعزيز، حي الشاطئ، مركز الأعمال الطبي' }}
                         </p>
                         <p class="text-xs text-amber-200/80 mb-2">
-                            <span class="font-bold text-white">{{ __('messages.phone') }}:</span> <span dir="ltr">+967 4 223344</span>
+                            <span class="font-bold text-white">{{ __('messages.phone') }}:</span> <span dir="ltr">920066788</span>
                         </p>
                         <p class="text-xs text-amber-200/80 mb-4">
-                            <span class="font-bold text-white">{{ __('messages.whatsapp') }}:</span> <span dir="ltr">967739876543</span>
+                            <span class="font-bold text-white">{{ __('messages.whatsapp') }}:</span> <span dir="ltr">920066788</span>
                         </p>
-                        <a href="https://wa.me/967739876543" target="_blank" class="text-xs text-[#25D366] hover:underline font-bold inline-flex items-center gap-1">
-                            <span>{{ app()->getLocale() === 'en' ? 'Chat with Ibb Branch' : 'واتساب فرع إب' }}</span>
+                        <a href="https://wa.me/966920066788" target="_blank" class="text-xs text-[#25D366] hover:underline font-bold inline-flex items-center gap-1">
+                            <span>{{ app()->getLocale() === 'en' ? 'Chat with Jeddah' : 'واتساب فرع جدة' }}</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+
+                    <!-- Col 4: Taif Branch -->
+                    <div>
+                        <h4 class="text-base font-bold text-white mb-4 border-b border-[#D4AF37]/30 pb-2">
+                            {{ app()->getLocale() === 'en' ? 'Taif Branch' : 'فرع الطائف' }}
+                        </h4>
+                        <p class="text-xs text-stone-300 leading-relaxed mb-3">
+                            {{ app()->getLocale() === 'en' ? 'Shehar Street, Specialized Clinics Complex, Taif' : 'شارع شهار العام، مجمع العيادات التخصصية، الطائف' }}
+                        </p>
+                        <p class="text-xs text-amber-200/80 mb-2">
+                            <span class="font-bold text-white">{{ __('messages.phone') }}:</span> <span dir="ltr">920066788</span>
+                        </p>
+                        <p class="text-xs text-amber-200/80 mb-4">
+                            <span class="font-bold text-white">{{ __('messages.whatsapp') }}:</span> <span dir="ltr">920066788</span>
+                        </p>
+                        <a href="https://wa.me/966920066788" target="_blank" class="text-xs text-[#25D366] hover:underline font-bold inline-flex items-center gap-1">
+                            <span>{{ app()->getLocale() === 'en' ? 'Chat with Taif' : 'واتساب فرع الطائف' }}</span>
                             <span>&rarr;</span>
                         </a>
                     </div>

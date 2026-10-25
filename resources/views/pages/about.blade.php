@@ -28,10 +28,10 @@
                         {{ app()->getLocale() === 'en' ? 'Our Vision & Values' : 'رؤيتنا ورسالتنا' }}
                     </span>
                     <h2 class="text-3xl sm:text-4xl font-black text-[#3B2A1E] leading-tight">
-                        {{ app()->getLocale() === 'en' ? 'Elevating Oral Surgery & Dental Care Standards in Yemen' : 'نرتقي بمعايير جراحة وطب الأسنان في اليمن' }}
+                        {{ app()->getLocale() === 'en' ? 'Elevating Oral Surgery & Dental Care Standards in Saudi Arabia' : 'نرتقي بمعايير جراحة وطب الأسنان في المملكة العربية السعودية' }}
                     </h2>
                     <p class="text-stone-700 text-sm md:text-base leading-relaxed">
-                        {{ app()->getLocale() === 'en' ? 'At Dar Al Uloom Clinic, we believe a confident smile and sound oral health change lives. Our clinic combines experienced surgical and medical talent with modern equipment, ensuring every patient receives comprehensive, personalized dental attention.' : 'في عيادة دار العلوم لجراحات الفم والأسنان، نؤمن أن صحة الفم وجمال الابتسامة ركيزتان أساسيتان لجودة الحياة. لذلك حرصنا على استقطاب استشاريين وأخصائيين حاصلين على أعلى الزمالات الطبية في جراحة الفم والأسنان، تقويم الأسنان، وطب أسنان الأطفال، وتجهيز فرعينا في صنعاء وإب بأحدث تقنيات التصوير الرقمي ثلاثي الأبعاد والميكروسكوب الجراحي.' }}
+                        {{ app()->getLocale() === 'en' ? 'At Dar Al Uloom Clinic, we believe a confident smile and sound oral health change lives. Our clinic combines experienced surgical and medical talent with modern equipment, ensuring every patient receives comprehensive, personalized dental attention.' : 'في عيادة دار العلوم لجراحات الفم والأسنان، نؤمن أن صحة الفم وجمال الابتسامة ركيزتان أساسيتان لجودة الحياة. لذلك حرصنا على استقطاب استشاريين وأخصائيين حاصلين على أعلى الزمالات الطبية في جراحة الفم والأسنان، تقويم الأسنان، وطب أسنان الأطفال، وتجهيز فروعنا في الرياض، جدة، والطائف بأحدث تقنيات التصوير الرقمي ثلاثي الأبعاد والميكروسكوب الجراحي.' }}
                     </p>
                     <p class="text-stone-700 text-sm md:text-base leading-relaxed">
                         {{ app()->getLocale() === 'en' ? 'From gentle pediatric checkups to complex orthodontic alignments, surgical extractions, and single-visit implants, we provide a complete spectrum of oral healthcare in a calming setting.' : 'نولي عناية فائقة لطب أسنان الأطفال لتنشئة أجيال خالية من الخوف من عيادة الأسنان، كما نوفر قسماً متخصصاً في جراحة الفم والفكين وزراعة الأسنان الفورية وتقويم الأسنان الشفاف (Invisalign) وتجميل الابتسامة.' }}
@@ -72,9 +72,9 @@
                         </x-card>
 
                         <x-card accent="brown" class="text-center !py-4">
-                            <span class="text-3xl font-black text-[#3B2A1E] block mb-1">2</span>
-                            <h4 class="font-bold text-[#3B2A1E] text-xs mb-0.5">{{ app()->getLocale() === 'en' ? 'Full Branches' : 'فرعان متكاملان' }}</h4>
-                            <p class="text-[11px] text-stone-500">{{ app()->getLocale() === 'en' ? 'Sana\'a & Ibb' : 'صنعاء وإب' }}</p>
+                            <span class="text-3xl font-black text-[#3B2A1E] block mb-1">3</span>
+                            <h4 class="font-bold text-[#3B2A1E] text-xs mb-0.5">{{ app()->getLocale() === 'en' ? 'Full Branches' : '3 فروع متكاملة' }}</h4>
+                            <p class="text-[11px] text-stone-500">{{ app()->getLocale() === 'en' ? 'Riyadh, Jeddah & Taif' : 'الرياض، جدة، والطائف' }}</p>
                         </x-card>
                     </div>
                 </div>

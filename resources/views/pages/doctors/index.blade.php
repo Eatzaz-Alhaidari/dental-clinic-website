@@ -13,7 +13,7 @@
                 {{ app()->getLocale() === 'en' ? 'Our Dental Consultants' : 'أطباؤنا ونخبة الاستشاريين' }}
             </h1>
             <p class="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base">
-                {{ app()->getLocale() === 'en' ? 'Our team features certified specialists across all major dental fields in our Sana\'a and Ibb clinics.' : 'يضم كادرنا استشاريين وأخصائيين حاصلين على الزمالات الدولية والبورد في تقويم الأسنان، أسنان الأطفال، الجراحة، والزراعة.' }}
+                {{ app()->getLocale() === 'en' ? 'Our team features certified specialists across all major dental fields in our Riyadh, Jeddah, and Taif clinics.' : 'يضم كادرنا استشاريين وأخصائيين حاصلين على الزمالات الدولية والبورد في تقويم الأسنان، أسنان الأطفال، الجراحة، والزراعة في فروعنا.' }}
             </p>
         </div>
     </section>

@@ -58,7 +58,7 @@ $desc = $service->getTranslation('description', $locale);
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
-                                    <span>{{ app()->getLocale() === 'en' ? 'Fully available across both Sana\'a and Ibb branches.' : 'متوفر بفرعينا في صنعاء وإب بأحدث المعدات والأجهزة الرقمية.' }}</span>
+                                    <span>{{ app()->getLocale() === 'en' ? 'Fully available across all Riyadh, Jeddah, and Taif branches.' : 'متوفر بجميع فروعنا في الرياض، جدة، والطائف بأحدث المعدات والأجهزة الرقمية.' }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>

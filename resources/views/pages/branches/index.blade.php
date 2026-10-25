@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', app()->getLocale() === 'en' ? 'Our Branches - Dar Al Uloom Clinic' : 'فروعنا في صنعاء وإب - عيادة دار العلوم لجراحات الفم والأسنان')
+@section('title', app()->getLocale() === 'en' ? 'Our Branches - Dar Al Uloom Clinic' : 'فروعنا في الرياض، جدة، والطائف - عيادة دار العلوم لجراحات الفم والأسنان')
 
 @section('content')
     <!-- Page Header Banner -->
@@ -10,10 +10,10 @@
                 {{ app()->getLocale() === 'en' ? 'Clinic Network' : 'مواقعنا وعياداتنا' }}
             </span>
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
-                {{ app()->getLocale() === 'en' ? 'Our Branches in Sana\'a & Ibb' : 'فروعنا لخدمتكم في صنعاء وإب' }}
+                {{ app()->getLocale() === 'en' ? 'Our Branches in Riyadh, Jeddah & Taif' : 'فروعنا لخدمتكم في الرياض، جدة، والطائف' }}
             </h1>
             <p class="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base">
-                {{ app()->getLocale() === 'en' ? 'Visit us in our fully-equipped modern clinics. We are ready to welcome you with world-class dental care.' : 'عيادات مجهزة بأرقى التجهيزات الطبية والتعقيم فائق الدقة، وكادر طبي متكامل في العاصمة صنعاء ومدينة إب.' }}
+                {{ app()->getLocale() === 'en' ? 'Visit us in our fully-equipped modern clinics. We are ready to welcome you with world-class dental care.' : 'عيادات مجهزة بأرقى التجهيزات الطبية والتعقيم فائق الدقة، وكادر طبي متكامل في الرياض، جدة، والطائف.' }}
             </p>
         </div>
     </section>
@@ -21,7 +21,7 @@
     <!-- Branches Cards & Deep Info -->
     <section class="py-16 md:py-24 bg-[#FFF9EC]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 @foreach($branches as $branch)
                     <div class="space-y-6">
                         <x-branch-card :branch="$branch" />

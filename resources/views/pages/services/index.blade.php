@@ -13,7 +13,7 @@
                 {{ app()->getLocale() === 'en' ? 'Our Dental Services' : 'خدماتنا العلاجية والتجميلية' }}
             </h1>
             <p class="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base">
-                {{ app()->getLocale() === 'en' ? 'Explore our range of comprehensive dental procedures provided across our Sana\'a and Ibb clinics.' : 'نقدم رعاية سنية متكاملة تشمل التقويم، طب أسنان الأطفال، الزراعة، وتجميل الابتسامة بأيدي أطباء استشاريين.' }}
+                {{ app()->getLocale() === 'en' ? 'Explore our range of comprehensive dental procedures provided across our Riyadh, Jeddah, and Taif clinics.' : 'نقدم رعاية سنية متكاملة تشمل التقويم، طب أسنان الأطفال، الزراعة، وتجميل الابتسامة بأيدي أطباء استشاريين في فروعنا.' }}
             </p>
         </div>
     </section>
@@ -34,7 +34,7 @@
                         {{ app()->getLocale() === 'en' ? 'Need advice on which service is right for you?' : 'هل تحتاج لاستشارة لتحديد الإجراء المناسب لحالتك؟' }}
                     </h3>
                     <p class="text-stone-600 text-sm">
-                        {{ app()->getLocale() === 'en' ? 'Book an examination appointment at either our Sana\'a or Ibb branch and receive a tailored dental plan.' : 'احجز موعد كشف واستشارة في فرع صنعاء أو فرع إب، وسيقوم الاستشاري بوضع خطة علاجية مخصصة لك.' }}
+                        {{ app()->getLocale() === 'en' ? 'Book an examination appointment at any of our Riyadh, Jeddah, or Taif branches and receive a tailored dental plan.' : 'احجز موعد كشف واستشارة في أقرب فرع إليك (الرياض، جدة، أو الطائف)، وسيقوم الاستشاري بوضع خطة علاجية مخصصة لك.' }}
                     </p>
                 </div>
 

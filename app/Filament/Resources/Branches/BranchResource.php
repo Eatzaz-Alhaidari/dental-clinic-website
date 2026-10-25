@@ -50,25 +50,25 @@ class BranchResource extends Resource
                             ->schema([
                                 TextInput::make('name.ar')
                                     ->label('اسم الفرع (بالعربية)')
-                                    ->placeholder('مثال: فرع صنعاء')
+                                    ->placeholder('مثال: فرع الرياض')
                                     ->required()
                                     ->maxLength(255),
 
                                 TextInput::make('name.en')
                                     ->label('اسم الفرع (بالإنجليزية)')
-                                    ->placeholder('e.g. Sana\'a Branch')
+                                    ->placeholder('e.g. Riyadh Branch')
                                     ->required()
                                     ->maxLength(255),
 
                                 TextInput::make('phone')
                                     ->label('رقم هاتف الاتصال')
-                                    ->placeholder('+9671445566')
+                                    ->placeholder('920066788')
                                     ->tel()
                                     ->required(),
 
                                 TextInput::make('whatsapp_number')
                                     ->label('رقم واتساب الفرع')
-                                    ->placeholder('967771234567')
+                                    ->placeholder('966920066788')
                                     ->helperText('يُحفظ تلقائياً بالصيغة الدولية بدون + أو أصفار')
                                     ->tel()
                                     ->required(),

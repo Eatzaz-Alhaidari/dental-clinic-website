@@ -119,12 +119,12 @@
                             <span class="text-rose-500">*</span>
                         </h3>
                         <p class="text-xs text-stone-500 font-medium">
-                            {{ app()->getLocale() === 'en' ? 'Select Sana\'a or Ibb branch to view available doctors and services' : 'حدد فرع صنعاء أو فرع إب لتحديد الأطباء والخدمات المتاحة فيه' }}
+                            {{ app()->getLocale() === 'en' ? 'Select Riyadh, Jeddah or Taif branch to view available doctors and services' : 'حدد الفرع الأقرب إليك (الرياض، جدة، أو الطائف) لتحديد الأطباء والخدمات المتاحة فيه' }}
                         </p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     @foreach($branches as $b)
                         @php
                             $isSelected = $branch_id === $b->id;
@@ -302,7 +302,7 @@
                                     <span class="text-rose-500">*</span>
                                 </label>
                                 <span class="text-[11px] text-stone-500 font-medium">
-                                    {{ app()->getLocale() === 'en' ? 'Yemen (77xxxxxxx) or KSA (05xxxxxxxx)' : 'اليمن (77xxxxxxx) أو السعودية (05xxxxxxxx)' }}
+                                    {{ app()->getLocale() === 'en' ? 'KSA (05xxxxxxxx) or Yemen (77xxxxxxx)' : 'السعودية (05xxxxxxxx) أو اليمن (77xxxxxxx)' }}
                                 </span>
                             </div>
                             <div class="relative rounded-xl shadow-xs">

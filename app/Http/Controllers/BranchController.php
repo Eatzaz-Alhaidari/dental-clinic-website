@@ -8,7 +8,7 @@ use Illuminate\View\View;
 class BranchController extends Controller
 {
     /**
-     * Display clinic branches (Sana'a and Ibb) with doctors, contacts, maps and working hours.
+     * Display clinic branches (Riyadh, Jeddah, and Taif) with doctors, contacts, maps and working hours.
      */
     public function index(): View
     {

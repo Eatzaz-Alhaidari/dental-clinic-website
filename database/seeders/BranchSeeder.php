@@ -12,50 +12,77 @@ class BranchSeeder extends Seeder
      */
     public function run(): void
     {
-        // 1. فرع صنعاء
+        $unifiedPhone = '920066788';
+        $unifiedWhatsapp = '966920066788';
+
+        // 1. فرع الرياض
         Branch::updateOrCreate(
             ['id' => 1],
             [
                 'name' => [
-                    'ar' => 'فرع صنعاء',
-                    'en' => 'Sana\'a Branch',
+                    'ar' => 'فرع الرياض',
+                    'en' => 'Riyadh Branch',
                 ],
                 'address' => [
-                    'ar' => 'شارع الستين الجنوبي، تقاطع حدة، جوار برج الرويشان، صنعاء، اليمن',
-                    'en' => 'South Sixty Street, Hadda Intersection, Near Al-Rowaishan Tower, Sana\'a, Yemen',
+                    'ar' => 'طريق الملك فهد، حي العليا، برج دار العلوم الطبي، الرياض، المملكة العربية السعودية',
+                    'en' => 'King Fahd Road, Al Olaya District, Dar Al Uloom Medical Tower, Riyadh, Saudi Arabia',
                 ],
                 // International format without '+' or leading zeros
-                'whatsapp_number' => '967771234567',
-                'phone' => '+9671445566',
+                'whatsapp_number' => $unifiedWhatsapp,
+                'phone' => $unifiedPhone,
                 'working_hours' => [
-                    'ar' => 'السبت - الخميس: 9:00 ص - 9:00 م | الجمعة: 3:00 م - 8:00 م',
-                    'en' => 'Sat - Thu: 9:00 AM - 9:00 PM | Fri: 3:00 PM - 8:00 PM',
+                    'ar' => 'السبت - الخميس: 9:00 ص - 10:00 م | الجمعة: 4:00 م - 9:00 م',
+                    'en' => 'Sat - Thu: 9:00 AM - 10:00 PM | Fri: 4:00 PM - 9:00 PM',
                 ],
-                'map_url' => 'https://maps.google.com/?q=15.3364,44.1843',
+                'map_url' => 'https://maps.google.com/?q=24.7136,46.6753',
                 'is_active' => true,
             ]
         );
 
-        // 2. فرع إب
+        // 2. فرع جدة
         Branch::updateOrCreate(
             ['id' => 2],
             [
                 'name' => [
-                    'ar' => 'فرع إب',
-                    'en' => 'Ibb Branch',
+                    'ar' => 'فرع جدة',
+                    'en' => 'Jeddah Branch',
                 ],
                 'address' => [
-                    'ar' => 'شارع العدين، مجمع النخبة الطبي، بالقرب من جولة المعاين، مدينة إب، اليمن',
-                    'en' => 'Al-Udayn Street, Elite Medical Complex, Near Al-Ma\'ayen Roundabout, Ibb City, Yemen',
+                    'ar' => 'طريق الملك عبدالعزيز، حي الشاطئ، مركز الأعمال الطبي، جدة، المملكة العربية السعودية',
+                    'en' => 'King Abdulaziz Road, Al Shati District, Medical Business Center, Jeddah, Saudi Arabia',
                 ],
                 // International format without '+' or leading zeros
-                'whatsapp_number' => '967739876543',
-                'phone' => '+9674223344',
+                'whatsapp_number' => $unifiedWhatsapp,
+                'phone' => $unifiedPhone,
                 'working_hours' => [
-                    'ar' => 'السبت - الخميس: 8:30 ص - 8:30 م | الجمعة: مغلق',
-                    'en' => 'Sat - Thu: 8:30 AM - 8:30 PM | Fri: Closed',
+                    'ar' => 'السبت - الخميس: 9:00 ص - 10:00 م | الجمعة: 4:00 م - 9:00 م',
+                    'en' => 'Sat - Thu: 9:00 AM - 10:00 PM | Fri: 4:00 PM - 9:00 PM',
                 ],
-                'map_url' => 'https://maps.google.com/?q=13.9759,44.1709',
+                'map_url' => 'https://maps.google.com/?q=21.5433,39.1728',
+                'is_active' => true,
+            ]
+        );
+
+        // 3. فرع الطائف
+        Branch::updateOrCreate(
+            ['id' => 3],
+            [
+                'name' => [
+                    'ar' => 'فرع الطائف',
+                    'en' => 'Taif Branch',
+                ],
+                'address' => [
+                    'ar' => 'شارع شهار العام، مجمع العيادات التخصصية، الطائف، المملكة العربية السعودية',
+                    'en' => 'Shehar Street, Specialized Clinics Complex, Taif, Saudi Arabia',
+                ],
+                // International format without '+' or leading zeros
+                'whatsapp_number' => $unifiedWhatsapp,
+                'phone' => $unifiedPhone,
+                'working_hours' => [
+                    'ar' => 'السبت - الخميس: 9:00 ص - 9:30 م | الجمعة: 4:00 م - 9:00 م',
+                    'en' => 'Sat - Thu: 9:00 AM - 9:30 PM | Fri: 4:00 PM - 9:00 PM',
+                ],
+                'map_url' => 'https://maps.google.com/?q=21.2854,40.4222',
                 'is_active' => true,
             ]
         );
